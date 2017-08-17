@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Management</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+   
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bar"></span>
+                    <span class="fa fa-bar"></span>
+                    <span class="fa fa-bar"></span>
+                </button>
+                <a class="navbar-brand" >Admin</a> 
+            </div>
+  <div style="color: white;
+padding: 15px 50px 5px 50px;
+float: right;
+font-size: 16px;"><a href="login.html" class="btn btn-danger ">Logout</a> </div>
+        </nav>   
+           <!-- /. NAV TOP  -->
+                <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+				<li class="text-center">
+                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+					</li>
+				
+					
+                    <li>
+                        <a  href="/dashboard"><i class="fa fa-shopping-basket fa-3x"></i> &nbsp;&nbsp;Dashboard</a>
+                    </li>
+                      <li>
+                        <a class="active-menu"   href="/assignproject"><i class="fa fa-suitcase fa-3x"></i>&nbsp;&nbsp;Assign Project</a>
+                    </li>
+                    <li>
+                        <a  href="/developer"><i class="fa fa-edit fa-3x"></i> &nbsp;&nbsp;Developer</a>
+                    </li>
+						   <li  >
+                        <a  href="/customer"><i class="fa fa-handshake-o fa-3x"></i> Customer</a>
+                    </li>	
+                      <li  >
+                        <a  href="/payment"><i class="fa fa-usd fa-3x"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Payment</a>
+                    </li>
+                    <li  >
+                        <a  href="/chat"><i class="fa fa-commenting-o fa-3x"></i> &nbsp;&nbsp;Chat</a>
+                    </li>				
+					
+					  <li  >
+                        <a   href="/adminregisteration"><i class="fa fa-user-circle  fa-3x"></i> Admin Registeration</a>
+                    </li>	
+                     <li  >
+                        <a   href="/developerregisteration"><i class="fa fa-user fa-3x"></i> Developer Registeration</a>
+                    </li>	                 
+                  
+                  <li  >
+                        <a  href="/account"><i class="fa fa-address-book fa-3x"></i> Account</a>
+                    </li>	
+                </ul>
+               
+            </div>
+            
+        </nav>  
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                     <h2><i class="fa fa-suitcase fa-2x"></i>&nbsp;&nbsp;Assign Projects To Developers</h2>   
+                        
+                       
+                    </div>
+                </div>
+                 <!-- /. ROW  -->
+                 <hr />
+                 <div class="row">
+                    
+          <div class="col-md-12">
+             <div class="panel panel-primary">
+                        <div class="panel-heading">    Assign Project  </div>                              
+                  <div class="panel-body">
+<!--
+                         <div class="col-xs-8">
+                       <div class="form-group">
+                                            <label>Text Input</label>
+                                           <center> <input class="form-control" /></center>
+                             </div>
+                      </div>
+-->
+                      <form action="/form" method="post">
+                      <div class="form-group input-group">
+  <span class="input-group-addon">Project Id</span>
+  <input type="text" class="form-control" name="projectid" required/>
+</div>
+                      <div class="form-group input-group">
+  <span class="input-group-addon">Project Name</span>
+  <input type="text" class="form-control" name="projectname" required />
+</div>
+                      <div class="form-group input-group">
+  <span class="input-group-addon">Assigned To</span>
+  <input type="text" class="form-control" name="assignedto" required />
+</div>
+                      
+                      <div class="form-group input-group">
+  <span class="input-group-addon">Date</span>
+  <input type="date" class="form-control" name="date" required />
+</div>
+                      
+                      <div class="form-group input-group">
+  <span class="input-group-addon">Due Date</span>
+  <input type="date" class="form-control" name="duedate" required />
+</div>
+                      
+                      <div class="form-group input-group">
+  <span class="input-group-addon">Amount</span>
+  <input type="number" class="form-control" name="amount" required />
+</div>
+                      
+                      <div class="form-group input-group">
+  <span class="input-group-addon">Advance</span>
+  <input type="number" class="form-control" name="advance" required />
+</div>
+                      
+                      <div class="form-group input-group">
+  <span class="input-group-addon">Balance</span>
+  <input type="number" class="form-control" name="balance" required/>
+</div>
+<!--              <a  class="btn btn-danger ">Submit</a>        -->
+     
+                       <button class="btn btn-lg btn-primary btn-block">submit</button>
+                      </form>
+                 </div>
+            </div>
+         </div>
+                     
+                     
+                <!-- /. ROW  -->
+    </div>
+             <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+    </div>
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+ 
+</body>
+</html>
